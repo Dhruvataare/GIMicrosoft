@@ -174,4 +174,4 @@ class UpvoteIdeaDialogContent extends React.Component<IIdeaDialogContentProps, I
     }
 }
 
-export default withTranslation()(UpvoteIdeaDialogContent)
+export default withTranslation() (UpvoteIdeaDialogContent);
