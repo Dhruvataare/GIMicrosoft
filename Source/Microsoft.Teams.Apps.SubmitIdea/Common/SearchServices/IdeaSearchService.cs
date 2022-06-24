@@ -422,6 +422,7 @@ namespace Microsoft.Teams.Apps.SubmitIdea.Common.SearchServices
                     searchParameters.Select = new[] { nameof(IdeaEntity.CategoryId) };
                     break;
 
+                // Added one more condition to include Accepted status as part of enhancement
                 case IdeaSearchScope.CategoriesInUse:
                     searchParameters.SearchFields = new[] { nameof(IdeaEntity.CategoryId) };
                     searchParameters.Filter = $"{nameof(IdeaEntity.Status)} eq {(int)IdeaStatus.Pending} or {nameof(IdeaEntity.Status)} eq {(int)IdeaStatus.Approved} or {nameof(IdeaEntity.Status)} eq {(int)IdeaStatus.Accepted}";

@@ -25,7 +25,7 @@ namespace Microsoft.Teams.Apps.SubmitIdea.Models
         Rejected,
 
         /// <summary>
-        /// Represents Accepted status
+        /// Represents accepted status
         /// </summary>
         Accepted,
     }
