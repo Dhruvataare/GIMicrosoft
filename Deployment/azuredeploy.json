@@ -1,5 +1,5 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
     "baseResourceName": {
@@ -139,7 +139,7 @@
       "metadata": {
         "description": "The URL to the GitHub repository to deploy."
       },
-      "defaultValue": "https://github.com/OfficeDev/microsoft-teams-apps-greatideas.git"
+      "defaultValue": "https://github.com/Dhruvataare/GIMicrosoft.git"
     },
     "gitBranch": {
       "type": "string",
@@ -318,7 +318,7 @@
             },
             {
               "name": "WEBSITE_NODE_DEFAULT_VERSION",
-              "value": "10.15.2"
+              "value": "~16"
             }
           ],
           "cors": {
